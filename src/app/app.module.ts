@@ -3,11 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/reusable/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CertificatesComponent } from './pages/certificates/certificates.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    CertificatesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule

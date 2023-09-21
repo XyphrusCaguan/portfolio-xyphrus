@@ -1,23 +1,23 @@
 <div class="max-w-sm absolute">
     <div class="flex h-screen fixed">
         <ng-container *ngIf="show">
-        <div class="flex-col w-full bg-gradient-to-r from-green-100 to-cyan-100 px-5 pt-5 relative">
-            <div class="w-24 mb-5">
+        <div class="flex-col w-full bg-gradient-to-r from-green-100 to-cyan-100 px-5 pt-5 relative drop-shadow-lg">
+            <div class="w-24 py-5">
                 <button>
-                    <a href="/"><img src="assets/images/placeholder.png" alt="placeholder"></a>
+                    <a href="#profile"><img src="assets/images/logo.png" alt="placeholder"></a>
                 </button>
             </div>
             <div class="mb-5">
-                <a href="/" class="text-xl text-purple-900 hover:text-blue-600 font-black">Projects</a>
+                <a href="#project" class="text-xl text-purple-900 hover:text-blue-600 font-black">Projects</a>
             </div>
             <div>
-                <a href="/" class="text-xl text-purple-900 hover:text-blue-600 font-black">Skills</a>
+                <a href="#skills" class="text-xl text-purple-900 hover:text-blue-600 font-black">Skills</a>
             </div>
         </div>
     </ng-container>
         <div class="relative">
-            <button class="bg-gradient-to-r from-cyan-100 to-green-100 w-16 h-16 flex justify-center p-3 rounded-r-xl" (click)="toggle()" id="bt">
-                <img src="assets/images/greater-than.png" alt="transition left-right">
+            <button class="bg-cyan-100 w-16 h-16 flex justify-center p-3 rounded-r-xl drop-shadow-lg" (click)="toggle()" id="bt">
+                <img [@rotatedState]='state' src="assets/images/greater-than.png" alt="transition left-right" />
                 {{buttonName}}
             </button>
         </div>

@@ -7,6 +7,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
     SkillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

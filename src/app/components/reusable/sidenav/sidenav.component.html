@@ -1,21 +1,21 @@
 <div class="max-w-sm absolute">
-    <div class="flex h-screen w-2/3">
+    <div class="flex h-screen fixed">
         <ng-container *ngIf="show">
-        <div class="flex-col w-full bg-gradient-to-r from-green-100 to-cyan-100 px-5 pt-5">
+        <div class="flex-col w-full bg-gradient-to-r from-green-100 to-cyan-100 px-5 pt-5 relative">
             <div class="w-24 mb-5">
                 <button>
                     <a href="/"><img src="assets/images/placeholder.png" alt="placeholder"></a>
                 </button>
             </div>
             <div class="mb-5">
-                <a href="/" class="text-xl text-gray-700 hover:text-blue-800">Projects</a>
+                <a href="/" class="text-xl text-purple-900 hover:text-blue-600 font-black">Projects</a>
             </div>
             <div>
-                <a href="/" class="text-xl text-gray-700 hover:text-blue-800">Skills</a>
+                <a href="/" class="text-xl text-purple-900 hover:text-blue-600 font-black">Skills</a>
             </div>
         </div>
     </ng-container>
-        <div>
+        <div class="relative">
             <button class="bg-gradient-to-r from-cyan-100 to-green-100 w-16 h-16 flex justify-center p-3 rounded-r-xl" (click)="toggle()" id="bt">
                 <img src="assets/images/greater-than.png" alt="transition left-right">
                 {{buttonName}}

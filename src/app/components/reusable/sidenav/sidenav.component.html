@@ -1,16 +1,16 @@
-<div class="max-w-sm absolute">
-    <div class="flex h-screen fixed">
+<div class="absolute">
+    <div class="flex h-full w-3/4 fixed md:w-36">
         <ng-container *ngIf="show">
         <div class="flex-col w-full bg-gradient-to-r from-green-100 to-cyan-100 px-5 pt-5 relative drop-shadow-lg">
-            <div class="w-24 py-5">
+            <div class="flex align-middle justify-center py-5 md:justify-start">
                 <button>
-                    <a href="#profile"><img src="assets/images/logo.png" alt="placeholder"></a>
+                    <a href="#profile"><img src="assets/images/logo.png" alt="placeholder" class="w-40 md:w-24"></a>
                 </button>
             </div>
-            <div class="mb-5">
+            <div class="pl-14 mb-5 md:pl-0">
                 <a href="#project" class="text-xl text-purple-900 hover:text-blue-600 font-black">Projects</a>
             </div>
-            <div>
+            <div class="pl-14 md:pl-0">
                 <a href="#skills" class="text-xl text-purple-900 hover:text-blue-600 font-black">Skills</a>
             </div>
         </div>

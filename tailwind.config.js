@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     screens: {
       'sm': '375px',
-      // => @media (min-width: 390px) { ... }
+      // => @media (min-width: 375px) { ... }
       'md': '390px',
-      // => @media (min-width: 789px) { ... }
-      'lg': '789px',
-      // => @media (min-width: 1000px) { ... }
+      // => @media (min-width: 390px) { ... }
+      'lg': '768px',
+      // => @media (min-width: 768px) { ... }
     },
     extend: {},
   },
